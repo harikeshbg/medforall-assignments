@@ -42,26 +42,26 @@ The system must:
 ```mermaid
 flowchart LR
   subgraph Clients
-    W[Web (Next.js)]
-    M[Mobile (React Native)]
+    W["Web (Next.js)"]
+    M["Mobile (React Native)"]
   end
 
-  W -->|HTTPS| G[API Gateway / BFF]
+  W -->|HTTPS| G["API Gateway / BFF"]
   M -->|HTTPS| G
 
-  G --> S[Scheduling Service]
-  G --> A[Availability Service]
-  G --> R[Rules Service]
-  G --> N[Realtime/Notification Service]
+  G --> S["Scheduling Service"]
+  G --> A["Availability Service"]
+  G --> R["Rules Service"]
+  G --> N["Realtime/Notification Service"]
 
-  S --> P[(Postgres)]
+  S --> P["Postgres"]
   A --> P
   R --> P
 
-  S --> C[(Redis Cache)]
+  S --> C["Redis Cache"]
   A --> C
 
-  S --> E[(Event Bus)]
+  S --> E["Event Bus"]
   A --> E
   N --> E
 
