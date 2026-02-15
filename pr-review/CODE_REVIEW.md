@@ -3,8 +3,6 @@ title: "PR Review — Quick Add Patient (QuickAddPatient.tsx)"
 assignment: "Assignment 5 — Code Review Exercise"
 ---
 
-fileciteturn0file0
-
 # PR Review: QuickAddPatient.tsx (Medium-Length, Easy to Read)
 
 ## Summary (what’s wrong overall)
